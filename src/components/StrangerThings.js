@@ -8,7 +8,7 @@ const { REACT_APP_HAWKINS_URL,
   REACT_APP_HAWKINS_TIMEOUT,
   REACT_APP_UPSIDEDOWN_URL,
   REACT_APP_UPSIDEDOWN_TIMEOUT,
-  REACT_APP_DEV_ENVIRONMENT,
+  // REACT_APP_DEV_ENVIRONMENT,
 } = process.env;
 
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
@@ -25,7 +25,7 @@ const upsideDownConfig = {
   timeout: REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
 
-const developerMood = REACT_APP_DEV_ENVIRONMENT;
+// const developerMood = REACT_APP_DEV_ENVIRONMENT;
 
 const charactersService = new CharactersService(strangerThingsConfig);
 const charactersUpsideDownService = new CharactersService(upsideDownConfig);
@@ -126,7 +126,7 @@ class StrangerThings extends React.Component {
       >
         <div className="content strangerfy">
           <div className="change-reality">
-            { (developerMood === 'development') && <h1>Em desenvolvimento</h1> }
+            {/* { (developerMood === 'development') && <h1>Em desenvolvimento</h1> } */}
             <button type="button" onClick={ this.changeRealityClick }>
               {' '}
               Mudar de Realidade
